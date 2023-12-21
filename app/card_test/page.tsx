@@ -11,7 +11,79 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-const notifications = [
+export const notifications = [
+  {
+    title: "Your call has been confirmed.",
+    description: "1 hour ago",
+  },
+  {
+    title: "You have a new message!",
+    description: "1 hour ago",
+  },
+  {
+    title: "Your subscription is expiring soon!",
+    description: "2 hours ago",
+  },
+  {
+    title: "Your call has been confirmed.",
+    description: "1 hour ago",
+  },
+  {
+    title: "You have a new message!",
+    description: "1 hour ago",
+  },
+  {
+    title: "Your subscription is expiring soon!",
+    description: "2 hours ago",
+  },
+  {
+    title: "Your call has been confirmed.",
+    description: "1 hour ago",
+  },
+  {
+    title: "You have a new message!",
+    description: "1 hour ago",
+  },
+  {
+    title: "Your subscription is expiring soon!",
+    description: "2 hours ago",
+  },
+  {
+    title: "Your call has been confirmed.",
+    description: "1 hour ago",
+  },
+  {
+    title: "You have a new message!",
+    description: "1 hour ago",
+  },
+  {
+    title: "Your subscription is expiring soon!",
+    description: "2 hours ago",
+  },
+  {
+    title: "Your call has been confirmed.",
+    description: "1 hour ago",
+  },
+  {
+    title: "You have a new message!",
+    description: "1 hour ago",
+  },
+  {
+    title: "Your subscription is expiring soon!",
+    description: "2 hours ago",
+  },
+  {
+    title: "Your call has been confirmed.",
+    description: "1 hour ago",
+  },
+  {
+    title: "You have a new message!",
+    description: "1 hour ago",
+  },
+  {
+    title: "Your subscription is expiring soon!",
+    description: "2 hours ago",
+  },
   {
     title: "Your call has been confirmed.",
     description: "1 hour ago",
@@ -30,7 +102,7 @@ type CardProps = React.ComponentProps<typeof Card>
 
 export default function CardDemo({ className, ...props }: CardProps) {
   return (
-    <Card className={cn("w-[380px]", className)} {...props}>
+    <Card className={cn("", className)} {...props}>
       <CardHeader>
         <CardTitle>Notifications</CardTitle>
         <CardDescription>You have 3 unread messages.</CardDescription>

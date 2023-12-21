@@ -1,14 +1,17 @@
 import React from "react";
 import TableDemo from "../channels_test/page";
 import CardDemo from "../card_test/page";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 function page() {
   return (
-    <div className="flex px-24 border-8 justify-around">
-      <div className="flex-1 border-8 border-red-300">
+    <div className="flex px-24">
+      <div className="flex-1">
         <TableDemo></TableDemo>
       </div>
-      <CardDemo className="flex-1 border-8 border-yellow-300"></CardDemo>
+        <ScrollArea className="flex-1 !sticky top-0 mx-4 min-h-screen max-h-screen rounded-md">
+          <CardDemo></CardDemo>
+        </ScrollArea>
     </div>
   );
 }
