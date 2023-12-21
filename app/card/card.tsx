@@ -100,7 +100,7 @@ export const notifications = [
 
 type CardProps = React.ComponentProps<typeof Card>
 
-export default function CardDemo({ className, ...props }: CardProps) {
+export default function CardPage({ className, ...props }: CardProps) {
   return (
     <Card className={cn("", className)} {...props}>
       <CardHeader>
