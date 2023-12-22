@@ -1,5 +1,5 @@
 import React from "react";
-import CardPage from "../card/card";
+import CardPage from "../card/page";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   Table,
@@ -9,12 +9,13 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import channel_metadata from "../data/data";
+import channel_metadata from "../data/channel_metadata";
+import posts from "../data/post_metadata";
 
 function page() {
   return (
-    <div className="flex px-24">
-      <Table>
+    <div className="flex px-24 justify-center">
+      <Table className="flex-auto ml-24">
         <TableHeader>
           <TableRow>
             <TableHead>#</TableHead>
@@ -40,7 +41,7 @@ function page() {
           ))}
         </TableBody>
       </Table>
-      <ScrollArea className="flex-1 !sticky top-0 mx-4 min-h-screen max-h-screen rounded-md">
+      <ScrollArea className="flex-auto !sticky top-0 min-h-screen max-h-screen rounded-md">
         <CardPage></CardPage>
       </ScrollArea>
     </div>
