@@ -1,16 +1,19 @@
 const posts = [
     {
       author: "John Doe",
+      profile_url: "https://www.supercast.xyz/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fmerkle-manufactory%2Fimage%2Ffetch%2Fhttps%253A%252F%252Fi.imgur.com%252FMpN3LoZ.jpg&w=96&q=75",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       description: "3 days ago",
     },
     {
       author: "Alice Smith",
+      profile_url:"https://i.seadn.io/gae/sYAr036bd0bRpj7OX6B-F-MqLGznVkK3--DSneL_BT5GX4NZJ3Zu91PgjpD9-xuVJtHq0qirJfPZeMKrahz8Us2Tj_X8qdNPYC-imqs?w=500&auto=format",
       text: "Vestibulum in libero ac justo tincidunt fermentum.",
       description: "5 hours ago",
     },
     {
       author: "Bob Johnson",
+      profile_url:"https://i.imgur.com/W7OsuB6.jpeg",
       text: "Suspendisse potenti. Etiam vel feugiat diam.",
       description: "1 week ago",
     },
