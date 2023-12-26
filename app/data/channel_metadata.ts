@@ -1,4 +1,13 @@
-const channel_metadata = [
+export interface ChannelStruct {
+  rank: string;
+  name: string;
+  activity: string;
+  posts: string;
+  replies: string;
+  likes: string;
+  recasts: string;
+}
+const channel_metadata: ChannelStruct[] = [
     {
       rank: "1",
       name: "Degen",
@@ -90,7 +99,7 @@ const channel_metadata = [
       recasts: "130",
     },
     {
-      rank: "7",
+      rank: "11",
       name: "Founders",
       activity: "260",
       posts: "140",
@@ -99,7 +108,7 @@ const channel_metadata = [
       recasts: "100",
     },
     {
-      rank: "8",
+      rank: "12",
       name: "Wowow",
       activity: "240",
       posts: "120",
@@ -108,7 +117,7 @@ const channel_metadata = [
       recasts: "110",
     },
     {
-      rank: "9",
+      rank: "13",
       name: "AI",
       activity: "220",
       posts: "100",
@@ -117,7 +126,7 @@ const channel_metadata = [
       recasts: "120",
     },
     {
-      rank: "10",
+      rank: "14",
       name: "Ethereum",
       activity: "200",
       posts: "80",
@@ -126,7 +135,7 @@ const channel_metadata = [
       recasts: "130",
     },
     {
-      rank: "7",
+      rank: "15",
       name: "Founders",
       activity: "260",
       posts: "140",
@@ -135,7 +144,7 @@ const channel_metadata = [
       recasts: "100",
     },
     {
-      rank: "8",
+      rank: "16",
       name: "Wowow",
       activity: "240",
       posts: "120",
@@ -144,7 +153,7 @@ const channel_metadata = [
       recasts: "110",
     },
     {
-      rank: "9",
+      rank: "17",
       name: "AI",
       activity: "220",
       posts: "100",
@@ -153,7 +162,7 @@ const channel_metadata = [
       recasts: "120",
     },
     {
-      rank: "10",
+      rank: "18",
       name: "Ethereum",
       activity: "200",
       posts: "80",
@@ -162,7 +171,7 @@ const channel_metadata = [
       recasts: "130",
     },
     {
-      rank: "7",
+      rank: "19",
       name: "Founders",
       activity: "260",
       posts: "140",
@@ -171,7 +180,7 @@ const channel_metadata = [
       recasts: "100",
     },
     {
-      rank: "8",
+      rank: "20",
       name: "Wowow",
       activity: "240",
       posts: "120",
@@ -180,7 +189,7 @@ const channel_metadata = [
       recasts: "110",
     },
     {
-      rank: "9",
+      rank: "21",
       name: "AI",
       activity: "220",
       posts: "100",
@@ -189,7 +198,7 @@ const channel_metadata = [
       recasts: "120",
     },
     {
-      rank: "10",
+      rank: "22",
       name: "Ethereum",
       activity: "200",
       posts: "80",
@@ -198,7 +207,7 @@ const channel_metadata = [
       recasts: "130",
     },
     {
-      rank: "7",
+      rank: "23",
       name: "Founders",
       activity: "260",
       posts: "140",
@@ -207,7 +216,7 @@ const channel_metadata = [
       recasts: "100",
     },
     {
-      rank: "8",
+      rank: "24",
       name: "Wowow",
       activity: "240",
       posts: "120",
@@ -216,7 +225,7 @@ const channel_metadata = [
       recasts: "110",
     },
     {
-      rank: "9",
+      rank: "25",
       name: "AI",
       activity: "220",
       posts: "100",
@@ -225,7 +234,7 @@ const channel_metadata = [
       recasts: "120",
     },
     {
-      rank: "10",
+      rank: "26",
       name: "Ethereum",
       activity: "200",
       posts: "80",
@@ -234,7 +243,7 @@ const channel_metadata = [
       recasts: "130",
     },
     {
-      rank: "7",
+      rank: "27",
       name: "Founders",
       activity: "260",
       posts: "140",
@@ -243,7 +252,7 @@ const channel_metadata = [
       recasts: "100",
     },
     {
-      rank: "8",
+      rank: "28",
       name: "Wowow",
       activity: "240",
       posts: "120",
@@ -252,7 +261,7 @@ const channel_metadata = [
       recasts: "110",
     },
     {
-      rank: "9",
+      rank: "29",
       name: "AI",
       activity: "220",
       posts: "100",
@@ -261,7 +270,7 @@ const channel_metadata = [
       recasts: "120",
     },
     {
-      rank: "10",
+      rank: "30",
       name: "Ethereum",
       activity: "200",
       posts: "80",
@@ -270,7 +279,7 @@ const channel_metadata = [
       recasts: "130",
     },
     {
-      rank: "7",
+      rank: "31",
       name: "Founders",
       activity: "260",
       posts: "140",
@@ -279,7 +288,7 @@ const channel_metadata = [
       recasts: "100",
     },
     {
-      rank: "8",
+      rank: "32",
       name: "Wowow",
       activity: "240",
       posts: "120",
@@ -288,7 +297,7 @@ const channel_metadata = [
       recasts: "110",
     },
     {
-      rank: "9",
+      rank: "33",
       name: "AI",
       activity: "220",
       posts: "100",
@@ -297,7 +306,7 @@ const channel_metadata = [
       recasts: "120",
     },
     {
-      rank: "10",
+      rank: "34",
       name: "Ethereum",
       activity: "200",
       posts: "80",
@@ -305,99 +314,6 @@ const channel_metadata = [
       likes: "500",
       recasts: "130",
     },
-  ];
-
-export const channel_metadata_2 = [
-    {
-      rank: "1",
-      name: "TechTalk",
-      activity: "500",
-      posts: "300",
-      replies: "150",
-      likes: "1100",
-      recasts: "45",
-    },
-    {
-      rank: "2",
-      name: "CryptoHub",
-      activity: "450",
-      posts: "280",
-      replies: "130",
-      likes: "1000",
-      recasts: "55",
-    },
-    {
-      rank: "3",
-      name: "GamerStream",
-      activity: "400",
-      posts: "250",
-      replies: "120",
-      likes: "950",
-      recasts: "65",
-    },
-    {
-      rank: "4",
-      name: "ArtistsAlley",
-      activity: "380",
-      posts: "230",
-      replies: "110",
-      likes: "900",
-      recasts: "75",
-    },
-    {
-      rank: "5",
-      name: "ScienceSphere",
-      activity: "360",
-      posts: "210",
-      replies: "100",
-      likes: "850",
-      recasts: "85",
-    },
-    {
-      rank: "6",
-      name: "BookClub",
-      activity: "340",
-      posts: "190",
-      replies: "90",
-      likes: "800",
-      recasts: "95",
-    },
-    {
-      rank: "7",
-      name: "TravelTales",
-      activity: "320",
-      posts: "170",
-      replies: "80",
-      likes: "750",
-      recasts: "105",
-    },
-    {
-      rank: "8",
-      name: "Foodies",
-      activity: "300",
-      posts: "150",
-      replies: "70",
-      likes: "700",
-      recasts: "115",
-    },
-    {
-      rank: "9",
-      name: "FitnessFreaks",
-      activity: "280",
-      posts: "130",
-      replies: "60",
-      likes: "650",
-      recasts: "125",
-    },
-    {
-      rank: "10",
-      name: "MovieMania",
-      activity: "260",
-      posts: "110",
-      replies: "50",
-      likes: "600",
-      recasts: "135",
-    }
   ];
 
 export default channel_metadata;

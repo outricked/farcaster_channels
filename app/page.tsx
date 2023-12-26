@@ -1,4 +1,7 @@
-import React from "react";
+'use client'
+
+import * as React from 'react';
+import { useState, useEffect } from 'react';
 import CardPage from "../components/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import {
@@ -12,7 +15,17 @@ import {
 import channel_metadata from "./data/channel_metadata";
 import posts from "./data/post_metadata";
 
-function page() {
+function Page() {
+  const [Channel, setChannel] = useState<string>();
+
+  const scrollRef = React.useRef<HTMLDivElement>(null); // Add a ref
+
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = 0;
+    }
+  }, [Channel]);
+
   return (
     <div className="flex px-24 justify-center">
       <Table className="flex-auto ml-24">
@@ -29,7 +42,7 @@ function page() {
         </TableHeader>
         <TableBody>
           {channel_metadata.map((channel_metadata) => (
-            <TableRow key={channel_metadata.rank}>
+            <TableRow key={channel_metadata.rank} onClick={()=>setChannel(channel_metadata.name)}>
               <TableCell>{channel_metadata.rank}</TableCell>
               <TableCell>{channel_metadata.name}</TableCell>
               <TableCell>{channel_metadata.activity}</TableCell>
@@ -41,11 +54,11 @@ function page() {
           ))}
         </TableBody>
       </Table>
-      <ScrollArea className="flex-auto !sticky top-0 min-h-screen max-h-screen rounded-md">
-        <CardPage></CardPage>
+      <ScrollArea ref={scrollRef} className="flex-auto !sticky top-0 min-h-screen max-h-screen rounded-md">
+        <CardPage channelName={Channel}></CardPage>
       </ScrollArea>
     </div>
   );
 }
 
-export default page;
+export default Page;
